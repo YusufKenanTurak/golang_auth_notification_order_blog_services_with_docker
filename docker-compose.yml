@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8083:8083"
+  notification-service:
+    build: ./notification-service
+    ports:
+      - "8084:8084"
+  order-service:
+    build: ./order-service
+    ports:
+      - "8085:8085"
+  blog-service:
+    build: ./blog-service
+    ports:
+      - "8086:8086"
